@@ -31,7 +31,7 @@ class Balance
         var text = $(btc).html() + ' <span class="badge badge-warning">' + usd_balance.toFixed(2) + '€</span>';
         $(btc).html(text);
         $('.ibox-title:first').find('h5').append(' <font color="black">|</font> <span id="price_disclaimer"></span>');
-        $('#price_disclaimer').css('color', '#f5b35c').css('font-weight', 'bold').text('1 BTC = $'+this.app.btcPrice);
+        $('#price_disclaimer').css('color', '#f5b35c').css('font-weight', 'bold').text('1 BTC = '+this.app.btcPrice.toFixed(2) + '€');
         this.app.log(this.constructor.name + " loaded in: " + (new Date().getTime() - this.runDate) + " ms.");
 	}
 
