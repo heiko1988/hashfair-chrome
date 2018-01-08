@@ -11,8 +11,6 @@ Der Danke an das Plugin geht an mhthnz https://github.com/mhthnz/hashfair-chrome
  	Project is opensource.
  	
 # Install:
-##### Install via chrome market:
-[https://chrome.google.com/webstore/detail/hashfair-reborn/ogiegfgghlangemlggeoogaadkebmibh](https://chrome.google.com/webstore/detail/hashfair-reborn/ogiegfgghlangemlggeoogaadkebmibh)
 ##### Or you can download archive and install via developer mode in google chrome.
 
 # What's new in version 2.3?
