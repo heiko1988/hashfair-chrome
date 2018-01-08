@@ -1,3 +1,9 @@
+# Hashfair-reborn v2.3-Deutsch: 
+- Change All From Dollar($) to Euro(€)
+- Preise auf Euro Angepasst
+
+Der Danke an das Plugin geht an mhthnz https://github.com/mhthnz/hashfair-chrome
+
 # Hashfair-reborn v2.3: 
     Analytics for HashFlare cloud mining. 
  	Supplement that shows real income on site hashflare.io. 
