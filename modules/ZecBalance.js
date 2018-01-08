@@ -38,7 +38,7 @@ class ZecBalance
         if (last.length > 0) {
         	let lastZec = parseFloat($(last).html());
         	if (lastZec > 0) {
-        		let lastText = $(last).html() + ' <span class="badge badge-warning">$' + (lastZec * zecPrice).toFixed(2) + '</span>';
+        		let lastText = $(last).html() + ' <span class="badge badge-warning">' + (lastZec * zecPrice).toFixed(2) + '€</span>';
         		$(last).html(lastText);
 			}
 		}

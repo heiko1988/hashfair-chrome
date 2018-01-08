@@ -24,7 +24,7 @@ class ShaHashrate{
         let btc_block = $('#sha-row').find('h3.no-margins');
         $(btc_block).find('br').remove();
         let btcHashrate = (parseFloat(payout.getClearPayout()) / parseFloat(this.dependency.hashrate)).toFixed(8);
-        $('<span style="font-weight:bold;">1 TH = ~ ' + btcHashrate + ' BTC <span class="badge badge-warning">$'+(btcHashrate * this.app.btcPrice).toFixed(2)+'</span></span>').insertBefore($(btc_block));
+        $('<span style="font-weight:bold;">1 TH = ~ ' + btcHashrate + ' BTC <span class="badge badge-warning">'+(btcHashrate * this.app.btcPrice).toFixed(2)+'€</span></span>').insertBefore($(btc_block));
         this.app.log(this.constructor.name + " loaded in: " + (new Date().getTime() - this.runDate) + " ms.");
     }
 

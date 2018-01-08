@@ -29,7 +29,7 @@ class EthBalance
 			return;
 		}
         let usd_balance = parseFloat($(eth).html()) * parseFloat(ethPrice);
-        let text = $(eth).html() + ' <span class="badge badge-warning">$' + usd_balance.toFixed(2) + '</span>';
+        let text = $(eth).html() + ' <span class="badge badge-warning">' + usd_balance.toFixed(2) + '€</span>';
         $(eth).html(text);
         $(eth).closest('.ibox.float-e-margins').find('.ibox-title').find('h5').append(' <span>|</span> <span style="font-weight: bold;color:#f5b35c">1 ETH = $' + ethPrice + '</span>');
 

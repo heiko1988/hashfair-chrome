@@ -182,7 +182,7 @@ $.ajax('https://hashflare.io/panel/history').done(function (content) {
         module: 'Donate'
     });
     // Parse btc price
-    let btcPrice = parseFloat($('#btcprice').val());
+    let btcPrice = parseFloat($('#btcprice').val()) * 0.835;
 
     // Apply btc price
     if (btcPrice > 0) {

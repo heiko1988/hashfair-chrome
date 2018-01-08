@@ -28,7 +28,7 @@ class Balance
         	return;
 		}
         var usd_balance = parseFloat($(btc).html()) * parseFloat(this.app.btcPrice);
-        var text = $(btc).html() + ' <span class="badge badge-warning">$' + usd_balance.toFixed(2) + '</span>';
+        var text = $(btc).html() + ' <span class="badge badge-warning">' + usd_balance.toFixed(2) + '€</span>';
         $(btc).html(text);
         $('.ibox-title:first').find('h5').append(' <font color="black">|</font> <span id="price_disclaimer"></span>');
         $('#price_disclaimer').css('color', '#f5b35c').css('font-weight', 'bold').text('1 BTC = $'+this.app.btcPrice);

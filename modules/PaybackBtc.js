@@ -98,11 +98,11 @@ class PaybackBtc {
                         </tr>
                         <tr>
                             <td>{payback:total_invested}:</td>
-                            <td class="value">${totalPurchasedUsd}$</td>
+                            <td class="value">${totalPurchasedUsd}€</td>
                         </tr>
                         <tr>
                             <td>{payback:invested_without_reinvest}:</td>
-                            <td class="value">${totalPurchasedUsdWithoutReinvest}$</td>
+                            <td class="value">${totalPurchasedUsdWithoutReinvest}€</td>
                         </tr>
                     </table>
                     
@@ -116,11 +116,11 @@ class PaybackBtc {
                         </tr>
                         <tr>
                             <td>{payback:total_out_amount}:</td>
-                            <td class="value">${totalWithdrawalsBtc} BTC <span class="badge badge-warning">$${totalWithdrawalsBtcInUsd}</span></td>
+                            <td class="value">${totalWithdrawalsBtc} BTC <span class="badge badge-warning">${totalWithdrawalsBtcInUsd}€</span></td>
                         </tr>
                         <tr>
                             <td>{payback:amount_with_comission}:</td>
-                            <td class="value">${totalWithdrawalsBtcWithComission} BTC <span class="badge badge-warning">$${totalWithdrawalsBtcWithComissionInUsd}</span></td>
+                            <td class="value">${totalWithdrawalsBtcWithComission} BTC <span class="badge badge-warning">${totalWithdrawalsBtcWithComissionInUsd}€</span></td>
                         </tr>
                     </table>
                     

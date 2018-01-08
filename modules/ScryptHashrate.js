@@ -24,7 +24,7 @@ class ScryptHashrate {
         let scrypt_block = $('#scrypt-row').find('h3.no-margins');
         $(scrypt_block).find('br').remove();
         let scryptHashrate = (parseFloat(payout.getClearPayout()) / parseFloat(this.dependency.hashrate)).toFixed(8);
-        $('<span style="font-weight:bold;">1 MH = ~ ' + scryptHashrate + ' BTC <span class="badge badge-warning">$'+(scryptHashrate * this.app.btcPrice).toFixed(2)+'</span></span>').insertBefore($(scrypt_block));
+        $('<span style="font-weight:bold;">1 MH = ~ ' + scryptHashrate + ' BTC <span class="badge badge-warning">'+(scryptHashrate * this.app.btcPrice).toFixed(2)+'€</span></span>').insertBefore($(scrypt_block));
         this.app.log(this.constructor.name + " loaded in: " + (new Date().getTime() - this.runDate) + " ms.");
     }
 

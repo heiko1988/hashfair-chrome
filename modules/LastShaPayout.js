@@ -27,7 +27,7 @@ class LastShaPayout
 			let payout = payouts[0].getClearPayout();
             var container = $('ul.stat-list:first')[0];
             $(container).find('li:eq(2)').find('span').css('background-color', '#f5b35c');
-            $(container).find('li:eq(2)').find('h3').html(payout + ' BTC &nbsp;' + '<span class="badge badge-warning">$'+(payout * this.app.btcPrice).toFixed(2)+'</span>');
+            $(container).find('li:eq(2)').find('h3').html(payout + ' BTC &nbsp;' + '<span class="badge badge-warning">'+(payout * this.app.btcPrice).toFixed(2)+'€</span>');
             this.app.log(this.constructor.name + " loaded in: " + (new Date().getTime() - this.runDate) + " ms.");
         }
 	}

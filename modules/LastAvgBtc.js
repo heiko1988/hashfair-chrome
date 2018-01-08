@@ -32,7 +32,7 @@ class LastAvgBtc
         $(sample).after('<li>'+sample_html+'</li>');
         var target = $(container).find('li:last')[0];
         $(target).find('.p-xxs').css('background-color', '#f5b35c');
-        $(target).find('h3').html(parseFloat(result).toFixed(8) + ' BTC &nbsp; <span class="badge badge-warning">$' + (parseFloat(result) * this.app.btcPrice).toFixed(2) + '</span>');
+        $(target).find('h3').html(parseFloat(result).toFixed(8) + ' BTC &nbsp; <span class="badge badge-warning">' + (parseFloat(result) * this.app.btcPrice).toFixed(2) + '€</span>');
         $(target).find('small').text(translate.t('UI', 'DailyAverage', {days: 14}));
         this.app.log(this.constructor.name + " loaded in: " + (new Date().getTime() - this.runDate) + " ms.");
 	}

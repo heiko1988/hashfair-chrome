@@ -58,7 +58,7 @@ class ScryptForecast {
     forecast(amount, day)
     {
         amount = parseFloat(amount);
-        return amount.toFixed(8) + ' BTC = ' + (amount * this.app.btcPrice).toFixed(2) + ' USD <span class="pull-right badge badge-warning">'+day+'</span>';
+        return amount.toFixed(8) + ' BTC = ' + (amount * this.app.btcPrice).toFixed(2) + ' EUR <span class="pull-right badge badge-warning">'+day+'</span>';
     }
 
 }

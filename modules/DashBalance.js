@@ -28,7 +28,7 @@ class DashBalance
 			return;
 		}
         let usd_balance = parseFloat($(dash).html()) * parseFloat(dashPrice);
-        let text = $(dash).html() + ' <span class="badge badge-warning">$' + usd_balance.toFixed(2) + '</span>';
+        let text = $(dash).html() + ' <span class="badge badge-warning">' + usd_balance.toFixed(2) + '€</span>';
         $(dash).html(text);
         $(dash).closest('.ibox.float-e-margins').find('.ibox-title').find('h5').append(' <span>|</span> <span style="font-weight: bold;color:#f5b35c">1 DASH = $' + dashPrice + '</span>');
 
